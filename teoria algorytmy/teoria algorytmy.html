@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1> 1. Co to jest programowanie? </h1>
+<p><font size="5"> <b>Programowanie</b> jest to proces tworzenia programu komputerowego posługując się<b> kodem źródłowym</b> </font>
+</p>
+<font size="5"> Wyróżnia się dwa kody: <b>źródłowy</b> oraz <b>wynikowy</b> </font>
+<h1>2. Dwie reguły stosowane w językach programowania </h1>
+<ol type="a">
+<li>Reguły syntaktyczne→ reguły składni wyrażeń i funkcji użytych w programie,
+<li>Reguły semantyczne → semantyka języka programowania definiuje precyzyjnie znaczenie poszczególnych symboli (instrukcje, operatory itp.) oraz ich funkcję w programie.
+</ol>
+
+<h1>3. Dwie definicje alogrytmu </h1>
+
+<h2> Definicja 1. </h2>
+Algorytm →jest to pewien ciąg czynności, który prowadzi do rozwiązania danego problemu w skończonej ilości kroków.
+
+<h2>Definicja 2.</h2>
+Algorytm →to jednoznaczny przepis, opisujący krok po kroku sposób postępowania w celu rozwiązania pewnego problemu lub sposobu osiągnięcia jakiegoś celu.
+Ilość kroków algorytmu zależy od tego, jak złożony jest problem, którego on dotyczy. Zawsze jednak liczba tych kroków będzie liczbą skończoną.
+
+<h1> 4. Cechy charatkerystyczne poprawnego alogrytmu </h1>
+<ol>
+<li> <b>Poprawność</b> - dla każdego przypisanego zestawu danych, po wykonaniu skończonej
+liczby czynności, algorytm prowadzi do poprawnych wyników.
+<br>
+<li> <b>Jednoznaczność</b> - w każdym przypadku zastosowania algorytmu dla tych samych
+danych otrzymamy ten sam wynik.
+<br>
+<li> <b>Szczegółowość</b> - wykonawca algorytmu musi rozumieć opisane czynności i potrafić je
+wykonywać.
+<br>
+<li> <b>Uniwersalność</b> - algorytm ma służyć rozwiązywaniu pewnej grupy zadań, a nie tylko
+jednego zadania. Przykładowo algorytm na rozwiązywanie równań w postaci ax + b=0 ma je
+rozwiązać dla dowolnych współczynników a i b, a nie tylko dla jednego konkretnego zadania,
+np. 2x + 6 = 0
+<br>
+<li> <b>Skończoność </b>– dla każdego zbioru poprawnych danych wejściowych algorytm powinien
+zwracać wyniki w skończonej liczbie kroków.
+<br>
+<li> <b>Efektywność </b>– algorytm powinien rozwiązywać problem w jak najmniejszej liczbie
+kroków.
+</ol>
+<h1> 5. Etapy konstruowania algorytmu </h1>
+<ol>
+<li> Sformułowanie zadania.
+<li> Określenie danych wejściowych.
+<li> Określenie wyniku oraz sposobu jego prezentacji.
+<li> Ustalenie metody wykonania zadania.
+<li> Przy użyciu wybranej metody następuje zapisanie algorytmu.
+<li> Dokonujemy analizy poprawności rozwiązania.
+<li> Testowanie rozwiązania dla różnych danych.
+<li> Ocena skuteczności tegoż algorytmu.
+</ol>
+<h1> 6. Wymienić oraz omówić sposoby przedstawiania algortmu </h1>
+<ul>
+<li>słowny opis
+<li>schemat blokowy
+<li>lista kroków
+<li>drzewo algorytmu
+<li>drzewo wyrażeń
+<li>w pseudojęzyk
+<li>w język programowania.
+</ul>
+<b> <u>Różne sposoby przedstawiania algorytmów</b> </u>
+<br>
+<b>a)opis słowny </b>
+<br>
+Jest na ogół pierwszym, mało ścisłym opisem sposobem rozwiązania problemu. Rozpoczyna
+się często dyskusją, w jaki sposób można rozwiązać postawione zadanie. Dyskusja służy do
+rozważań nad sposobem i technikami przydatnymi w rozwiązania problemu.
+np. Opis słowny do algorytmu opisującego funkcję modułu (wartość bezwzględną).
+Dla wartości dodatnich argumentu x funkcja przyjmuje wartość x, dla wartości ujemnych
+argumentu x funkcja przyjmuje wartość –x.
+<br>
+<b>b)schemat blokowy</b>
+<br>
+<b>c)lista kroków</b>
+<br>
+Poszczególne kroki zawierają opis operacji, które mają być wykonane prze algorytm. Mogą w
+nich również wystąpić polecenia związane ze zmianą kolejności wykonywanych kroków.
+Kolejność kroków jest wykonywana w kolejności ich opisu z wyjątkiem sytuacji gdy jedno z
+poleceń w kroku jest przejściem do kroku o podanym numerze. Budowa opisu algorytmu w
+postaci listy kroków jest następujący:
+<ul>
+<li> tytuł algorytmu
+<li>specyfikacja problemu
+<li>lista kroków
+<li>komentarze ujęte w nawiasy klamrowe {komentarz}
+<br>
+<u>uwaga</u>: Krok 0 może być opuszczony
+</ul>
+<img src="a.PNG"> <br>
+<b>Algorytm obliczania wartości funkcji SGN(x)</b>
+<br>
+Dane: Dowolna liczba rzeczywista x.
+<br>
+Wynik:Wartość funkcji
+<br>
+<b>Krok 0.</b> Wczytaj wartość danej x
+<br>
+<b>Krok 1.</b> Jeśli x>0, to f(x)=1. Zakończ algorytm.
+<br>
+<b>Krok 2.</b> {W tym przypadku x<= 0.} Jeśli x=0, to f(x)=0 . Zakończ algorytm.
+<br>
+<b>Krok 3.</b> {W tym przypadku x< 0.} Mamy f(x)=–1 . Zakończ algorytm.
+<br>
+<p>
+<b>d)drzewo algorytmu</b>
+<br>
+Nazywany jest również drzewem obliczeń. Każde dwie drogi obliczeń mogą mieć tylko
+początkowe fragmenty wspólne, ale po rozejściu już się nie spotkają.
+</p>
+<i>np. Drzewo algorytmu dla funkcji SGN(x).</i>
+<br>
+<img src="aa.png">
+<br>
+<b>e)drzewo wyrażeń</b>
+<br>
+Stosowane do obliczeń wyrażeń arytmetycznych.
+<br>
+<i>np. Wyrażenie (a+sin(x))*b/(a–b)</i>
+<br>
+<img src="p.png">
+<br>
+<b> f)program w języku programowania np. C++, Pascal </b><p>
+</p>
+<b>g)pseudojęzyk</b><p>
+</p>
+PROGRAM Wycieczka;
+<br>
+ZMIENNE punkty:naturalne;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;koszty, dofinansowanie:rzeczywiste;
+<br>
+ZACZNIJ;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WPROWADŹ(PUNKTY,KOSZTY);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEŚLI punkty >=100 i punkty <= TO dofinansowanie :=1/3*koszty+0.2*koszty
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W PRZECIWNYM WYPADKU
+<br>
+dofinansowanie:=0.2*koszty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WYPROWADŹ('Dofinansowanie wynosi:'dofinansowanie);
+<br>
+ZAKOŃCZ.
+<br>
+<h1> 7. Podać 4 elementy specyfikacji problemów </h1>
+<b> <u>Specyfikacja problemu</b> </u>
+<br>
+Jest to dokładny opis problemu, który chcemy rozwiązać.
+<br>
+Specyfikacja składa się z:
+<ul>
+<b> <li> danych wejściowych, </b>
+<b> <li> dane wyjściowe</b>  oraz warunki jakie muszą spełniać (czyli związek pomiędzy danymi a
+wynikami).
+<b> <li> warunki</b>  jakie muszą spełniać dane wejściowe
+<li> <b> rysunki</b>  ( jeśli są konieczne), <b> wzory</b>  obliczeniowe
+</ul>
+<h1> 8. Symbole stosowane w schematach blokowych </h1>
+<table border="1" cellspacing="0" cellpadding="0">
+<th colspan="3"> Symbole stosowane w schematach blokowych </th>
+<tr>
+<td>
+<b>Początek algorytmu</b>
+</td>
+<td>
+<img src="q.png">
+</td>
+<td>
+W każdym algorytmie musi się znaleźć
+<br>
+dokładnie jedna taka figura z napisem
+<br>
+"Start" oznaczająca początek algorytmu
+<br>
+Blok symbolizujący początek algorytmu
+<br>
+ma dokładnie jedną strzałkę wychodzącą 
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Koniec Algorytmu</b>
+</td>
+<td>
+<img src="w.png">
+</td>
+<td>
+W każdym algorytmie musi się znaleźć
+<br>
+dokładnie jedna figura z napisem "Stop"
+<br>
+oznaczająca koniec algorytmu.
+<br>
+Najczęściej popełnianym błędem w
+<br>
+schematach blokowych jest umieszczanie
+<br>
+kilku stanów końcowych, zależnych od
+<br>
+sposobu zakończenia programu. Blok
+<br>
+symbolizujący koniec ma co najmniej
+<br>
+jedną strzałkę wchodzącą.
+</td>
+</tr>
+
+<tr>
+<td>
+<b>blok wyjścia wejścia</b>
+</td>
+<td>
+<img src="e.png">
+</td>
+<td>
+Równoległobok jest stosowany do
+<br>
+odczytu lub zapisu danych. W jego
+<br>
+obrębie należy umieścić stosowną
+<br>
+instrukcję np. Read(x) lub Write(x)
+<br>
+(można też stosować opis słowny np.
+<br>
+"Drukuj x na ekran"). Figura ta ma
+<br>
+dokładnie jedną strzałkę wchodzącą i
+<br>
+jedną wychodzącą. Jest to blok
+<br>
+wyjścia/wejścia wy/we I/O.
+</td>
+</tr>
+
+<tr>
+<td>
+<b>blok decyzyjny</b>
+</td>
+<td>
+<img src="r.png">
+</td>
+<td>
+Romb symbolizuje blok decyzyjny.
+<br>
+Umieszcza się w nim jakiś warunek (np.
+<br>
+"x>2"). Z dwóch wybranych
+<br>
+wierzchołków rombu wyprowadzamy
+<br>
+dwie możliwe drogi: gdy warunek jest
+<br>
+spełniony (strzałkę wychodzącą z tego
+<br>
+wierzchołka należy opatrzyć etykietą
+<br>
+"Tak") oraz gdy warunek nie jest
+<br>
+spełniony „Nie‖. Każdy romb ma
+<br>
+dokładnie jedną strzałkę wchodzącą oraz
+<br>
+dokładnie dwie strzałki wychodzące.
+</td>
+</tr>
+
+<tr>
+<td>
+<b>blok przetwarzania</b>
+</td>
+<td>
+<img src="t.png">
+</td>
+<td>
+Jest to figura oznaczająca proces. W jej
+<br>
+obrębie umieszczamy wszelkie <b> obliczenia
+<br>
+lub podstawienia. </b> Proces ma dokładnie
+<br>
+jedną strzałkę wchodzącą i dokładnie
+<br>
+jedną strzałkę wychodzącą.
+</td>
+</tr>
+
+<tr>
+<td>
+<b>blok podprogramu</b>
+</td>
+<td>
+<img src="y.png">
+</td>
+<td>
+Ta figura symbolizuje proces, który został już kiedyś
+<br>
+zdefiniowany. Można ją porównać do procedury, którą
+<br>
+definiuje się raz w programie, by następnie móc ją
+<br>
+wielokrotnie wywoływać. Warunkiem użycia jest więc
+<br>
+wcześniejsze zdefiniowanie procesu. Podobnie jak w
+<br>
+przypadku zwykłego procesu i tu mamy jedno wejście i
+<br>
+jedno wyjście
+</td>
+</tr>
+
+<tr>
+<td>
+<b>łącznik stronicowy</b>
+</td>
+<td>
+<img src="u.png">
+</td>
+<td>
+Koło symbolizuje tzw. łącznik stronicowy. Może się
+<br>
+zdarzyć, że chcemy "przeskoczyć" z jednego miejsca na
+<br>
+kartce na inne. Możemy w takim wypadku posłużyć się
+<br>
+łącznikiem. Umieszczamy w jednym miejscu łącznik z
+<br>
+określonym symbolem w środku (np. cyfrą, literą) i
+<br>
+doprowadzamy do nie go strzałkę. Następnie w innym
+<br>
+miejscu kartki umieszczamy drugi łącznik z takim
+<br>
+samym symbolem w środku i wyprowadzamy z niego
+<br>
+strzałkę. Łączniki występują więc w parach, jeden ma
+<br>
+tylko wejście a drugi wyjście.
+</td>
+</tr>
+
+<tr>
+<td>
+<b>łącznik międzystronicowy</b>
+</td>
+<td>
+<img src="i.png">
+</td>
+<td>
+Ten symbol to łącznik międzystronicowy. Działa
+<br>
+analogicznie jak pierwszy, lecz nie w obrębie strony.
+<br>
+Przydatne w złożonych algorytmach, które nie mieszczą
+<br>
+się na jednej kartce. 
+</td>
+</tr>
+
+<tr>
+<td>
+<b>element łączący</b>
+</td>
+<td>
+<img src="o.png">
+</td>
+<td>
+Poszczególne elementy schematu łączy się
+<br>
+za pomocą strzałek. W większości
+<br>
+przypadków blok ma jedną strzałkę
+<br>
+wchodzącą i jedną wychodzącą
+</td>
+</tr>
+</table>
+
+<h1> 9. Wymienić oraz omówić reguły stosowane podczas rysowania schematów blokowych </h1>
+<b>Reguły rysowania schematów blokowych </b>
+<ol type="I">
+<li>Po zbudowaniu schematu blokowego nie powinno być takich strzałek, które z nikąd nie
+wychodzą, lub do nikąd nie dochodzą.
+<li> Każdy schemat blokowy musi mieć tylko jeden element startowy oraz co najmniej jeden
+element końca algorytmu.
+<li> Element łączący(strzałki łączące) powinien być rysowany w poziomie i pionie, załamania
+pod kątem prostym.
+</ol>
+
+<h1> 10. Wymienić oraz omówić podział algorytmów </h1>
+<br>
+<b>Podział algorytmów.</b>
+<br>
+<u>Definicja algorytmu liniowego</u>
+<br>
+Algorytmem liniowym nazywamy taki algorytm, który ma postać listy kroków
+<br>
+wykonywanych <b> <u>zgodnie z ich kolejnością. </b> </u>
+<br>
+Algorytmy liniowe są zapisem obliczeń, które mają postać ciągu operacji rachunkowych
+<br>
+wykonywanych bez sprawdzania jakichkolwiek warunków.
+<br>
+<u>Algorytm z warunkami (rozgałęzieniami)</u>
+<br>
+Ten typ algorytmu musi mieć bloki decyzyjne czyli bloki sprawdzania warunków.
+<br>
+<u>Algorytm numeryczne</u>
+<br>
+Algorytmy, które wykonują działania matematyczne na danych liczbowych, nazywamy
+<br>
+algorytmami numerycznymi.
+<br>
+<u> Algorytm typu dziel i zwyciężaj </u>
+Dzielimy problem na kilka mniejszych, a te znowu dzielimy, aż ich rozwiązania staną się
+<br>
+oczywiste,
+<br>
+<u>Algorytmy iteracyjne</u>
+Iteracja jest to zapętlenie algorytmu, czyli wykonywania danych działań, dopóki warunek
+<br>
+iteracji nie zostanie spełniony. Jest ona podstawą wszystkich choć troszkę bardziej złożonych
+<br>
+algorytmów. Zazwyczaj ma ona składnię wykonuj "jakaś czynność" dopóki "jakieś wyrażenie
+<br>
+logiczne".
+<br>
+<u>Algorytmy rekurencyjne</u>
+Rekurencje wykorzystuje się do rozwiązywania problemów gdzie powtarza się czynność aby
+<br>
+do niego dojść. Swoim działaniem przypomina iteracje. Jednak w tym przypadku <b> funkcja 
+<br>
+sama siebie wywołuje, dopóki nie otrzyma rozwiązania</b>, natomiast tam mieliśmy
+<br>
+powtórzenie pewnej czynności określoną ilość razy.
+
+<h1> 11. Wymienić oraz omówić złożoności stosowane podczas oceny algorytmu </h1>
+<b>Złożoność algorytmu</b>- ilość zasobów potrzebnych do poprawnego działania danego
+algorytmu
+<br>
+<b>Złożoności obliczeniowa</b>-Algorytm wykonujący najmniejszą ilość operacji podstawowych w
+celu rozwiązania problemu.
+<br>
+<b>Złożoność czasowa</b>- Określa ilość operacji podstawowych potrzebnych do wykonania
+algorytmu o danej wielkości wejściowej.
+<br>
+<b>Złożoność pamięciowa</b>- Określa ilość przestrzeni pamięci wirtualnej potrzebnej do
+wykonania algorytmu z określonym zestawem danych wejściowych.
+
+
+
+</body>
+</html>
